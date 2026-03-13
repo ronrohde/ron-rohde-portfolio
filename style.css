@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --accent-color: #ff0000;
+    --font-primary: 'Merriweather', serif;
+    --font-secondary: 'Poppins', sans-serif;
+}
+section, header, nav, footer {
+max-width: 1000px;
+margin: auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-family: poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+body {
+   padding: 1em;
+   background-color: var(--base-color);
+} 
+
+h1, h2, h3 {
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+nav {
+   margin: 1em auto 3em auto;
+   width: min(1000px, 100%);
+}  
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}   
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+}   
+
+nav a:hover {
+    text-decoration: underline;
+}  
+
+header, section {
+    margin: 3rem auto;
+    width: min(75em, 100%);
+    background-color: var(--color-1);
+    padding: min(2em, 15%);
+    border-radius: 1em;   
+}   
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+
+}   
+
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.text-container {
+    flex: 0 1 em;
+}   
+
+h1 {
+    font-size: 2.5em;
+}
+
+.text-container p {
+    margin: .75em 0 1em 0;
+    font-size: 1.25rem;
+}   
+
+.cta-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    padding: .75em 1.25em;
+    border-radius: .5em;
+    font-weight: 600;
+}   
+
+.secondary {
+    background-color: var(--secondary-color);
+}  
+
+section {
+   padding: 3em min(2em, 15%);
+   background-color: var(--color-2);
+   text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.text-container p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.text-container p,
+section p {
+    line-height: 1.6;
+}
+
+section {
+    margin: 4em auto;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}   
+
+section#my-work {
+    background-color: var(--color-3);
+}
+
+.grid-container{
+display:flex;
+justify-content:center;
+gap:2rem;
+margin-top:2rem;
+}
+
+.grid-container{
+display:flex;
+justify-content:center;
+gap:3rem;
+margin-top:2rem;
+margin-bottom:4rem;
+}
+
+.grid-container img{
+width:320px;
+border-radius:.6rem;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+
+details {
+   margin-top: 1em;
+   background-color: var(--base-color);
+   border-radius: 1em;
+} 
+
+details summary {
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+details p {
+    padding: 0 2em 2em 2em;
+}
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}   
+
+footer a:hover {
+    text-decoration: underline;
+}  
+
+@media (max-width: 988px) {
+    header {
+        text-align: center;
+    }  
+    
+    header .text-container {
+        padding-top: 0;
+    }
+}   
+
+@media (max-width: 640px) {
+nav li {
+    display: none;
+    }
+
+    nav li:first-child,
+    nav li:last-child {
+        display: block;
+    }   
+
+    header {
+        margin-top: 0;
+    }  
+    
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+:root {
+    --base-color: #white;
+    --base-variant: #e8e9ed;
+    --text-color: #111528;
+    --secondary-text: #3a435d;
+    --primary-color: #3a435d;
+    --accent-color:#0071ff;  
+}
+.darkmode{    
+    --base-color: #070b1d;
+    --base-variant: #101425;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --primary-color: #3a435d;
+    --accent-color:#0071ff;  }
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+body {
+    min-height: 100vh;
+    background-color: var(--base-color);
+    color: var(--text-color);    
+}
+
+#skills h2{
+font-family: 'Merriweather', serif;
+}
+
+#skills h3{
+font-family: 'Merriweather', serif;
+font-size: 1.2rem;
+margin-bottom: .4rem;
+}
+
+#skills p{
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+color: var(--secondary-text);
+}
+#skills .skills-grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 2rem;
+margin-top: 2rem;
+text-align: center;
+}
+
+#skills h3{
+font-weight: 600;
+}
+
+#skills p{
+line-height: 1.6;
+}
+#theme-switch {
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#theme-switch:focus {
+    outline: none;
+}
+#theme-switch {
+    border: none;
+    box-shadow: none;
+}
+
+#theme-switch:hover {
+    transform: scale(1.1);
+}
+#theme-switch svg{
+    fill: var(--text-color);
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}   
+.project-description{
+    max-width: 650px;
+    margin: 1.5rem auto 0.8rem auto;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.project-note{
+    max-width: 650px;
+    margin: 0 auto 2rem auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--secondary-text);
+    text-align: center;
+}
+
+#my-work .cta-button{
+    margin-top: 1.2rem;
+}
