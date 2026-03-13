@@ -366,3 +366,25 @@ line-height: 1.6;
 #my-work .cta-button{
     margin-top: 1.2rem;
 }
+.project-links{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    margin-top:1.5rem;
+    margin-bottom:1rem;
+    flex-wrap:wrap;
+}
+
+.secondary-link{
+    background-color:transparent;
+    color:var(--text-color);
+    border:1px solid var(--secondary-text);
+}
+
+.secondary-link:hover{
+    border-color:var(--text-color);
+}
+
+#my-work .cta-button{
+    margin-top:2.2rem;
+}
